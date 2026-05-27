@@ -89,7 +89,7 @@ function CitationEntry({
   const afterTitle = citation.substring(citation.indexOf(title) + title.length)
 
   return (
-    <li className="py-3 border-b border-gray-100 last:border-0 text-sm leading-relaxed text-gray-700">
+    <li className="py-3 border-b border-gray-100 last:border-0 text-[15px] leading-relaxed text-gray-700">
       {beforeTitle}
       <a
         href={url}
@@ -110,20 +110,17 @@ export default function AboutPage() {
       {/* Bio section */}
       <div className="flex flex-col sm:flex-row gap-8 mb-14">
         <div className="flex-shrink-0">
-          <div className="w-32 h-40 bg-gray-200 rounded-xl flex flex-col items-center justify-center">
-            <svg className="w-10 h-10 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-            </svg>
-            <span className="text-xs text-gray-400 font-medium">Photo</span>
+          {/* Circular MZ avatar — placeholder until real headshot */}
+          <div className="w-28 h-28 rounded-full bg-[#C0392B] flex items-center justify-center shadow-md">
+            <span className="text-white font-extrabold text-2xl tracking-tight select-none">MZ</span>
           </div>
         </div>
         <div>
-          <div className="flex items-center gap-2.5 mb-4">
-            <h1 className="text-2xl font-extrabold text-[#1A1A1A]">Max Zworth</h1>
-            <span className="em-badge">EM</span>
-          </div>
-          <p className="text-base text-gray-600 leading-relaxed">
-            Max Zworth is an Emergency Physician in Toronto, Ontario. He completed medical school
+          <h1 className="text-2xl font-extrabold text-[#1A1A1A] mb-4">Max Zworth</h1>
+          <p className="text-[17px] text-gray-600 leading-relaxed">
+            Max Zworth is an Emergency Physician{' '}
+            <span className="em-badge align-middle" style={{ fontSize: '0.65rem', padding: '0.15rem 0.4rem', verticalAlign: 'middle' }}>EM</span>{' '}
+            in Toronto, Ontario. He completed medical school
             at McMaster University and his five-year Royal College Emergency Medicine residency at
             the University of Ottawa. Zworth Reading is his effort to make keeping up with the EM
             literature less overwhelming — and more useful — for practicing physicians.
@@ -133,8 +130,7 @@ export default function AboutPage() {
 
       {/* Selected Publications */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-[#1A1A1A] mb-1">Selected Publications</h2>
-        <div className="w-10 h-0.5 bg-[#C0392B] mb-5"></div>
+        <h2 className="section-heading mb-6">Selected Publications</h2>
         <ul className="divide-y divide-gray-100">
           {publications.map((pub, i) => (
             <CitationEntry key={i} {...pub} />
@@ -144,8 +140,7 @@ export default function AboutPage() {
 
       {/* FOAM & Medical Education */}
       <section>
-        <h2 className="text-xl font-bold text-[#1A1A1A] mb-1">FOAM &amp; Medical Education</h2>
-        <div className="w-10 h-0.5 bg-[#D4A017] mb-5"></div>
+        <h2 className="section-heading mb-6">FOAM &amp; Medical Education</h2>
         <ul className="divide-y divide-gray-100">
           {foamEntries.map((entry, i) => (
             <CitationEntry key={i} {...entry} />

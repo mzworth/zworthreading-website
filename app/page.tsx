@@ -7,11 +7,11 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero */}
+      {/* Hero — white */}
       <section className="bg-white border-b border-gray-100">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-3 mb-5">
+            <div className="flex items-center gap-3 mb-4">
               <h1 className="text-4xl md:text-5xl font-extrabold text-[#1A1A1A] tracking-tight">
                 Zworth Reading
               </h1>
@@ -20,28 +20,30 @@ export default function HomePage() {
             <p className="text-xl md:text-2xl text-gray-500 font-medium italic mb-6">
               What&rsquo;s worth reading in Emergency Medicine, this week.
             </p>
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-8 max-w-xl">
-              A weekly curated digest of the most important Emergency Medicine literature,
-              critically appraised and delivered every Sunday. Written for Canadian EM physicians
-              by a Canadian EM physician.
+            <p className="text-[17px] text-gray-600 leading-relaxed max-w-xl">
+              Every Sunday, a practicing Canadian EM physician cuts through the noise — curating
+              the week&rsquo;s most important literature, appraising it critically, and synthesizing
+              it with the best FOAM content. Not just what was published. What actually matters.
             </p>
-            <p className="text-sm font-semibold text-[#1A1A1A] mb-6 flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-[#C0392B]"></span>
-              Join 100+ emergency physicians who read it every week.
-            </p>
-
-            {/* Subscribe form */}
-            <div id="subscribe">
-              <SubscribeForm />
-            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Subscribe — red */}
+      <section id="subscribe" className="bg-[#C0392B]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
+          <p className="text-white font-bold text-lg md:text-xl mb-6 flex items-center gap-2.5">
+            <span className="inline-block w-2 h-2 rounded-full bg-white opacity-70 flex-shrink-0"></span>
+            Join 100+ emergency physicians who read it every week.
+          </p>
+          <SubscribeForm />
         </div>
       </section>
 
       {/* Recent editions preview */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-xl font-bold text-[#1A1A1A]">Recent Editions</h2>
+          <h2 className="section-heading">Recent Editions</h2>
           <Link href="/archive" className="text-sm text-[#C0392B] font-semibold hover:underline">
             View all &rarr;
           </Link>

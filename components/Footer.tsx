@@ -21,8 +21,9 @@ export default function Footer() {
             <Link href="/#subscribe" className="hover:text-[#C0392B] transition-colors font-medium">Subscribe</Link>
           </nav>
         </div>
-        <div className="mt-8 pt-6 border-t border-gray-100 text-xs text-gray-400 text-center">
-          &copy; 2026 Max Zworth. Zworth Reading.
+        <div className="mt-8 pt-6 border-t border-gray-100 text-xs text-gray-400 text-center space-y-1">
+          <p>&copy; 2026 Max Zworth. Zworth Reading.</p>
+          <p>Published weekly from Toronto, Ontario.</p>
         </div>
       </div>
     </footer>

@@ -29,6 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col bg-[#FAFAFA]`}>
+        {/* Red top banner */}
+        <div className="h-1 bg-[#C0392B] w-full flex-shrink-0" aria-hidden="true" />
         <Navbar />
         <main className="flex-1">
           {children}

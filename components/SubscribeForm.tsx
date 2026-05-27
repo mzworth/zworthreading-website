@@ -37,33 +37,38 @@ export default function SubscribeForm() {
 
   if (status === 'success') {
     return (
-      <div className="bg-green-50 border border-green-200 rounded-lg px-6 py-5 text-center">
-        <p className="text-green-800 font-semibold text-lg">You&rsquo;re in. See you Sunday.</p>
+      <div className="bg-white/15 rounded-lg px-6 py-5 text-center max-w-md">
+        <p className="text-white font-bold text-xl">You&rsquo;re in. See you Sunday.</p>
       </div>
     )
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
-      <input
-        type="email"
-        required
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="your@email.com"
-        className="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#C0392B] focus:border-transparent bg-white text-[#1A1A1A] placeholder-gray-400"
-        disabled={status === 'loading'}
-      />
-      <button
-        type="submit"
-        disabled={status === 'loading'}
-        className="bg-[#C0392B] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#A93226] transition-colors text-sm disabled:opacity-60 whitespace-nowrap"
-      >
-        {status === 'loading' ? 'Subscribing…' : 'Subscribe Free'}
-      </button>
+    <div className="max-w-md">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+        <input
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="your@email.com"
+          className="flex-1 px-4 py-3.5 border-0 rounded-lg text-[15px] focus:outline-none focus:ring-2 focus:ring-white/50 bg-white text-[#1A1A1A] placeholder-gray-400 shadow-sm"
+          disabled={status === 'loading'}
+        />
+        <button
+          type="submit"
+          disabled={status === 'loading'}
+          className="bg-[#D4A017] text-[#1A1A1A] font-bold px-7 py-3.5 rounded-lg hover:bg-[#c09010] transition-colors text-[15px] disabled:opacity-60 whitespace-nowrap shadow-sm"
+        >
+          {status === 'loading' ? 'Subscribing…' : 'Subscribe Free'}
+        </button>
+      </form>
       {status === 'error' && (
-        <p className="text-red-600 text-xs mt-1 w-full">Something went wrong. Please try again.</p>
+        <p className="text-white/80 text-sm mt-2">Something went wrong. Please try again.</p>
       )}
-    </form>
+      <p className="text-white/60 text-sm mt-3">
+        Free. Every Sunday. Unsubscribe anytime.
+      </p>
+    </div>
   )
 }
