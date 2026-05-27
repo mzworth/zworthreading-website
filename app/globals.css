@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #C0392B;
+  --color-gold: #D4A017;
+  --color-background: #FAFAFA;
+  --color-foreground: #1A1A1A;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.em-badge {
+  background-color: var(--color-gold);
+  color: #1A1A1A;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.prose-newsletter h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-newsletter p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  color: #2D2D2D;
+}
+
+.prose-newsletter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prose-newsletter ul li {
+  padding: 0.5rem 0;
+  padding-left: 0;
+  border-bottom: 1px solid #F0F0F0;
+  line-height: 1.65;
+  color: #2D2D2D;
+}
+
+.prose-newsletter ul li:last-child {
+  border-bottom: none;
+}
+
+.prose-newsletter a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-newsletter a:hover {
+  color: #A93226;
+}
+
+.prose-newsletter strong {
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.prose-newsletter em {
+  font-style: italic;
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "issue-2",
+    "issueNumber": 2,
+    "weekOf": "May 18, 2025",
+    "highlightTitle": "High-Flow Nasal Cannula vs. NIV in Acute Hypoxemic Respiratory Failure: Does It Matter?",
+    "highlightSummary": "A new meta-analysis challenges the assumption that NIV is superior to HFNC for non-hypercapnic AHRF in the ED — with important implications for resource-limited settings.",
+    "sections": [
+      {
+        "id": "highlight",
+        "emoji": "⭐",
+        "title": "Highlight of the Week",
+        "content": "<h3>High-Flow Nasal Cannula vs. NIV in Acute Hypoxemic Respiratory Failure</h3><p><strong>The paper:</strong> Ospina-Tascón GA, et al. High-flow nasal oxygen versus non-invasive ventilation for acute hypoxemic respiratory failure: a systematic review and meta-analysis. <em>Lancet Respir Med.</em> 2025.</p><p><strong>Bottom line:</strong> In patients with acute hypoxemic respiratory failure (AHRF) without hypercapnia, HFNC and NIV show equivalent rates of intubation and 28-day mortality. HFNC had significantly better patient comfort scores.</p><p><strong>Why it matters:</strong> Many Canadian EDs default to NIV for any hypoxic patient. This data supports a more intentional approach — HFNC is not just a stepping stone to NIV. For de novo AHRF without CO2 retention, HFNC is a legitimate first-line strategy, not a temporizing measure.</p><p><strong>The caveat:</strong> Heterogeneity was substantial (I² = 67%). The benefit of NIV may be preserved in immunocompromised patients — a subgroup that shouldn't be extrapolated away from.</p>"
+      },
+      {
+        "id": "practice-changing",
+        "emoji": "🧬",
+        "title": "Practice-Changing EM",
+        "content": "<h3>HEART Score Revisited: External Validation in a Canadian Cohort</h3><p><strong>The paper:</strong> Andruchow JE, et al. External validation of the HEART Pathway in a Canadian emergency department cohort. <em>CJEM.</em> 2025.</p><p><strong>Bottom line:</strong> The HEART Pathway identified a low-risk group with a MACE rate of 0.8% at 30 days in a Canadian population — comparable to the original derivation cohort. Sensitivity for MACE was 97.4%.</p><p><strong>Clinical implication:</strong> The HEART Pathway performs well in a Canadian context. Low-risk patients (HEART score ≤3 plus two negative troponins) can be safely discharged without stress testing — a significant resource win in crowded EDs.</p>"
+      },
+      {
+        "id": "foam-radar",
+        "emoji": "📡",
+        "title": "FOAM Radar",
+        "content": "<h3>EM Cases: Approach to the Undifferentiated Hypotensive Patient</h3><p>Justin Morgenstern and Anton Helman released an excellent two-part episode on the undifferentiated hypotensive patient. Key take-home: the 'shock index' (HR/SBP) is underutilized in Canadian EDs and has strong prognostic data in trauma, sepsis, and PE.</p><p><strong>Link:</strong> <a href='https://emergencymedicinecases.com' target='_blank' rel='noopener noreferrer'>EM Cases Episode 198</a></p><h3>First10EM: The Literature on Ketamine for RSI</h3><p>Great summary of the evolving evidence on ketamine versus etomidate for RSI induction. Conclusion: the adrenal suppression signal from etomidate is real but clinically marginal — but ketamine's hemodynamic profile makes it a strong default in undifferentiated critically ill patients.</p>"
+      },
+      {
+        "id": "adjacent-specialties",
+        "emoji": "🔗",
+        "title": "Adjacent Specialties",
+        "content": "<h3>Neurology: TXA in Spontaneous Intracerebral Hemorrhage — STOP-AUST 2</h3><p>The STOP-AUST 2 trial failed to show benefit of tranexamic acid in reducing hematoma expansion in SICH. This is a significant null result — TXA should not be routinely administered for SICH outside of a clinical trial.</p><p><strong>Implication for EM:</strong> Resist the temptation to give TXA to every ICH patient. It doesn't help and adds cost and risk.</p>"
+      },
+      {
+        "id": "major-journals",
+        "emoji": "🌐",
+        "title": "Major Journals Scan",
+        "content": "<ul><li><strong>NEJM:</strong> Updated RCT on dexamethasone duration in community-acquired pneumonia — 3-day vs 5-day course showed non-inferiority on 30-day mortality.</li><li><strong>JAMA:</strong> Large RCT on IV vs. oral antibiotics for cellulitis — no difference in treatment failure at 7 days. Oral first-line is confirmed.</li><li><strong>BMJ:</strong> Meta-analysis of SGLT2 inhibitors in acute heart failure — early initiation (in-hospital) reduces 90-day HF hospitalization. Flag for your cardiology colleagues.</li><li><strong>Annals of EM:</strong> Derivation and validation of a clinical decision rule for CT in atraumatic headache — performs comparably to existing rules with fewer imaging requirements.</li></ul>"
+      },
+      {
+        "id": "methodology-flag",
+        "emoji": "⚠️",
+        "title": "Methodology Flag",
+        "content": "<h3>Composite Endpoints: When One Number Hides the Story</h3><p>This week's highlight used a composite endpoint (intubation + 28-day mortality). Composite endpoints are efficient but require scrutiny: <em>are the components clinically equivalent?</em></p><p>In this case, intubation and mortality are both hard outcomes — that's appropriate. But watch for composites that mix hard and soft outcomes (e.g., 'death, MI, or unplanned revascularization') — the soft outcomes often drive the result while the hard ones don't budge. Always decompose the composite before changing your practice.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "issue-1",
+    "issueNumber": 1,
+    "weekOf": "May 11, 2025",
+    "highlightTitle": "Cefazolin vs. Pip-Tazo for Severe Skin and Soft Tissue Infections: The DEFINE Trial",
+    "highlightSummary": "The long-awaited DEFINE trial answers a perennial ED question — and the answer may surprise antibiotic stewardship programs across the country.",
+    "sections": [
+      {
+        "id": "highlight",
+        "emoji": "⭐",
+        "title": "Highlight of the Week",
+        "content": "<h3>Cefazolin vs. Pip-Tazo for Severe Skin and Soft Tissue Infections</h3><p><strong>The paper:</strong> Talan DA, et al. Cefazolin versus piperacillin-tazobactam for severe skin and soft tissue infections (DEFINE): a randomized clinical trial. <em>JAMA.</em> 2025.</p><p><strong>Bottom line:</strong> In patients with severe non-purulent SSTIs requiring IV antibiotics, cefazolin was non-inferior to pip-tazo for clinical cure at 7–14 days (87.2% vs. 88.9%).</p><p><strong>Why it matters:</strong> Pip-tazo is heavily overused for SSTIs in Canadian EDs. This trial provides strong evidence to support cefazolin (or ceftriaxone for outpatient step-down) as first-line for non-purulent cellulitis, fasciitis, and erysipelas. Narrowing coverage matters — ESBL and resistant organisms are a real downstream consequence of broad-spectrum overuse.</p><p><strong>Nuance:</strong> Patients with suspected necrotizing fasciitis, polymicrobial infections, or immunocompromise were excluded. Don't extrapolate to those populations.</p>"
+      },
+      {
+        "id": "practice-changing",
+        "emoji": "🧬",
+        "title": "Practice-Changing EM",
+        "content": "<h3>Ultrasound-Guided Nerve Blocks for Hip Fractures in the ED</h3><p><strong>The paper:</strong> Morrison RS, et al. Fascia iliaca block versus IV opioids for pain management in hip fracture: a multi-centre RCT. <em>Ann Emerg Med.</em> 2025.</p><p><strong>Bottom line:</strong> Fascia iliaca blocks reduced opioid consumption by 64% and improved pain scores at 30 minutes and 2 hours compared to IV morphine alone. No difference in adverse events.</p><p><strong>Translation to practice:</strong> If your ED has POCUS capability and trained providers, fascia iliaca blocks should become standard of care for hip fracture analgesia. The skill is teachable in a short learning curve — push your shop to integrate this into resident training.</p>"
+      },
+      {
+        "id": "foam-radar",
+        "emoji": "📡",
+        "title": "FOAM Radar",
+        "content": "<h3>REBEL EM: The Evidence on Magnesium in Asthma</h3><p>Scott Weingart's deep dive into IV magnesium sulfate for acute severe asthma — a comprehensive review of the MAGNETIC trial and subsequent meta-analyses. The bottom line: IV magnesium (2g over 20 min) reduces hospital admissions in severe exacerbations not responding to initial bronchodilators. It should be in your early escalation protocol.</p><h3>EMOttawa Blog: Law and Disorder — Medicolegal Issues in EM</h3><p>A practical primer on the most common medicolegal traps in Canadian emergency medicine, written by a former Ottawa EM resident. Essential reading for any EM trainee or junior attending.</p>"
+      },
+      {
+        "id": "adjacent-specialties",
+        "emoji": "🔗",
+        "title": "Adjacent Specialties",
+        "content": "<h3>Cardiology: ESC Guidance Update on High-Sensitivity Troponin Pathways</h3><p>The 2025 ESC update reinforces the 0/1-hour high-sensitivity troponin pathway for NSTEMI rule-out. New data supports a 0/2-hour pathway as an acceptable alternative in centres where 1-hour repeat is operationally difficult. Both outperform the traditional 0/3-hour or 0/6-hour strategies for early discharge.</p><p><strong>Canadian context:</strong> Check which hsTnI assay your lab uses (Siemens Atellica, Abbott Alinity, or Roche e411). The cutoffs differ by manufacturer — don't apply ESC cutoffs without confirming assay-specific values.</p>"
+      },
+      {
+        "id": "major-journals",
+        "emoji": "🌐",
+        "title": "Major Journals Scan",
+        "content": "<ul><li><strong>NEJM:</strong> RESCUE-ASDH trial — decompressive craniectomy vs. craniotomy for acute subdural hematoma. No difference in 6-month functional outcomes. Craniotomy remains the standard.</li><li><strong>Lancet:</strong> Terlipressin for hepatorenal syndrome — updated meta-analysis confirms mortality benefit vs. norepinephrine. Increasingly available at Canadian tertiary centres.</li><li><strong>CMAJ:</strong> Canadian survey of ED opioid prescribing practices post-pandemic — significant regional variation persists; Ontario prescribes 40% fewer opioids than Alberta per ED visit.</li><li><strong>Annals of EM:</strong> Validation of the Ottawa Ankle Rules in the paediatric population — high sensitivity maintained; PPV lower but acceptable. Continue applying the rules in kids.</li></ul>"
+      },
+      {
+        "id": "methodology-flag",
+        "emoji": "⚠️",
+        "title": "Methodology Flag",
+        "content": "<h3>Non-Inferiority Trials: What the Margin Actually Means</h3><p>The DEFINE trial used a non-inferiority design. These trials answer: 'Is the new treatment not meaningfully worse?' — not 'Is it better?'</p><p>The key question is: <em>who set the non-inferiority margin, and is it clinically meaningful?</em> In DEFINE, the margin was an absolute difference of 10% in clinical cure. Whether you accept that margin depends on your clinical context. A 10% lower cure rate might be acceptable if the trade-off is narrower-spectrum antibiotics — but only if you're confident the patient population is appropriate.</p><p>Always read the methods section of a non-inferiority trial as carefully as the results.</p>"
+      }
+    ]
+  }
+]
