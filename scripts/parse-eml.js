@@ -46,22 +46,32 @@ function decodeQP(str) {
 }
 
 // ---------------------------------------------------------------------------
-// Extract the HTML part from a multipart/alternative EML
+// Extract the HTML part from a MIME email.
+// Handles nested multipart structures (e.g. multipart/related wrapping
+// multipart/alternative) by trying every declared boundary and checking
+// whether a part's *own headers* (not nested content) declare text/html.
 // ---------------------------------------------------------------------------
 function extractHtml(emlContent) {
-  const boundaryMatch = emlContent.match(/boundary="([^"]+)"/);
-  if (!boundaryMatch) throw new Error('No MIME boundary found in EML');
-  const boundary = boundaryMatch[1];
+  // Collect every MIME boundary declared in the email
+  const boundaryRegex = /boundary="([^"]+)"/g;
+  let match;
+  const boundaries = [];
+  while ((match = boundaryRegex.exec(emlContent)) !== null) {
+    boundaries.push(match[1]);
+  }
+  if (boundaries.length === 0) throw new Error('No MIME boundary found in EML');
 
-  const parts = emlContent.split('--' + boundary);
-
-  for (const part of parts) {
-    if (/Content-Type:\s*text\/html/i.test(part)) {
-      // Headers end at the first blank line
+  for (const boundary of boundaries) {
+    const parts = emlContent.split('--' + boundary);
+    for (const part of parts) {
+      // Only examine the headers section of this part (before the first blank line)
       const sep = part.search(/\r?\n\r?\n/);
       if (sep === -1) continue;
-      const body = part.slice(sep).trim().replace(/\s*--\s*$/, '');
-      return decodeQP(body);
+      const headers = part.slice(0, sep);
+      if (/Content-Type:\s*text\/html/i.test(headers)) {
+        const body = part.slice(sep).trim().replace(/\s*--\s*$/, '');
+        return decodeQP(body);
+      }
     }
   }
   throw new Error('No HTML part found in EML');
@@ -181,6 +191,11 @@ function main() {
     const { emoji, title } = splitEmojiTitle(h2Text);
     if (!emoji || !title) continue;
 
+    // Skip h2s whose first character isn't a Unicode emoji/symbol.
+    // Content-wrapper h2s (used in some email clients) start with plain text.
+    const firstCp = Array.from(emoji)[0]?.codePointAt(0) ?? 0;
+    if (firstCp < 0x2600) continue;
+
     const id = titleToId(title);
 
     // Navigate: h2 → td → tr
@@ -202,6 +217,28 @@ function main() {
       rawHtml = innerDiv ? innerDiv.innerHTML : contentTd.innerHTML;
     } else {
       rawHtml = contentTd.innerHTML;
+    }
+
+    // Fallback: some emails nest both the header h2 and a content-wrapping h2
+    // inside the same <td> (instead of using a sibling <tr>). Detect this when
+    // the resolved content looks like the footer, then search sibling h2 elements
+    // in the same td for a table/div with real content.
+    if (/reply to this email|unsubscribe|subscribe here/i.test(rawHtml)) {
+      const siblingH2s = td.querySelectorAll('h2');
+      let fallbackHtml = '';
+      for (const sh2 of siblingH2s) {
+        if (sh2 === h2) continue;
+        // Look for a td with meaningful content inside this sibling h2
+        const innerTds = sh2.querySelectorAll('td');
+        for (const innerTd of innerTds) {
+          if (innerTd.text.trim().length > 80) {
+            fallbackHtml = innerTd.innerHTML;
+            break;
+          }
+        }
+        if (fallbackHtml) break;
+      }
+      if (fallbackHtml) rawHtml = fallbackHtml;
     }
 
     const content = cleanHtml(rawHtml);
