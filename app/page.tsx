@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import SubscribeForm from '@/components/SubscribeForm'
 import archiveData from '@/data/archive.json'
+import GlanceList from '@/components/GlanceList'
 
 export default function HomePage() {
   const recentIssues = archiveData.slice(0, 3)
@@ -65,9 +66,7 @@ export default function HomePage() {
               <h3 className="font-semibold text-[#1A1A1A] text-sm leading-snug mb-2 group-hover:text-[#C0392B] transition-colors">
                 ⭐ {issue.highlightTitle}
               </h3>
-              <p className="text-xs text-gray-500 leading-relaxed line-clamp-3">
-                {issue.highlightSummary}
-              </p>
+              <GlanceList sections={issue.sections} />
             </Link>
           ))}
         </div>

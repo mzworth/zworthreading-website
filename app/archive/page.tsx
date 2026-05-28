@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import archiveData from '@/data/archive.json'
+import GlanceList from '@/components/GlanceList'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -35,9 +36,7 @@ export default function ArchivePage() {
               <h2 className="font-semibold text-[#1A1A1A] text-sm leading-snug mb-1 group-hover:text-[#C0392B] transition-colors">
                 ⭐ {issue.highlightTitle}
               </h2>
-              <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
-                {issue.highlightSummary}
-              </p>
+              <GlanceList sections={issue.sections} />
             </div>
             <div className="hidden sm:flex items-center flex-shrink-0">
               <svg className="w-4 h-4 text-gray-300 group-hover:text-[#C0392B] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
