@@ -33,9 +33,6 @@ export default function ArchivePage() {
               <span className="text-xs text-gray-400 mt-0.5">{issue.weekOf}</span>
             </div>
             <div className="flex-1 min-w-0">
-              <h2 className="font-semibold text-[#1A1A1A] text-sm leading-snug mb-1 group-hover:text-[#C0392B] transition-colors">
-                ⭐ {issue.highlightTitle}
-              </h2>
               <GlanceList sections={issue.sections} />
             </div>
             <div className="hidden sm:flex items-center flex-shrink-0">

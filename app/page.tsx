@@ -63,9 +63,6 @@ export default function HomePage() {
                 <span className="text-gray-300">·</span>
                 <span className="text-xs text-gray-400">{issue.weekOf}</span>
               </div>
-              <h3 className="font-semibold text-[#1A1A1A] text-sm leading-snug mb-2 group-hover:text-[#C0392B] transition-colors">
-                ⭐ {issue.highlightTitle}
-              </h3>
               <GlanceList sections={issue.sections} />
             </Link>
           ))}
