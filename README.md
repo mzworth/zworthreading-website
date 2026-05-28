@@ -82,12 +82,9 @@ Copy `.env.local.example` to `.env.local` and fill in:
 
 | Variable | Description |
 |---|---|
-| `NEXT_PUBLIC_BEEHIIV_FORM_URL` | Beehiiv subscribe form endpoint (from your publication's embed settings) |
 | `SPOTIFY_URL` | Podcast URL on Spotify |
 | `APPLE_PODCASTS_URL` | Podcast URL on Apple Podcasts |
 | `YOUTUBE_URL` | Podcast URL on YouTube |
-
-> Note: The subscribe form variable must be prefixed with `NEXT_PUBLIC_` since it's used client-side.
 
 ---
 
