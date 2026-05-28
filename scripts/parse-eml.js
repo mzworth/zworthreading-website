@@ -247,9 +247,12 @@ function main() {
     archive[existingIdx] = entry;
     console.log(`Updated Issue #${issueNumber} — ${highlightTitle}`);
   } else {
-    archive.unshift(entry);
+    archive.push(entry);
     console.log(`Added Issue #${issueNumber} — ${highlightTitle}`);
   }
+
+  // Always keep archive sorted newest-first by issue number
+  archive.sort((a, b) => b.issueNumber - a.issueNumber);
 
   fs.writeFileSync(ARCHIVE_PATH, JSON.stringify(archive, null, 2) + '\n');
 
