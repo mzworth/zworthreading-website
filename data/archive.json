@@ -1,7 +1,7 @@
 [
   {
-    "slug": "issue-7",
-    "issueNumber": 7,
+    "slug": "issue-8",
+    "issueNumber": 8,
     "weekOf": "May 25, 2026",
     "highlightTitle": "Naloxone administration associated with improved survival in PEA out-of-hospital cardiac arrests",
     "highlightSummary": "Interesting signal that naloxone may benefit PEA arrests specifically, but this doesn't change practice yet. If you're already giving naloxone empirically in suspected opioid-associated arrests, this supports continuing. Personally I would say that as long as you're already doing all the other important components of ACLS, there is little harm giving a dose of Naloxone to a patient with no pulse if overdose is suspected. .",
@@ -45,8 +45,8 @@
     ]
   },
   {
-    "slug": "issue-6",
-    "issueNumber": 6,
+    "slug": "issue-7",
+    "issueNumber": 7,
     "weekOf": "May 19, 2026",
     "highlightTitle": "Azithromycin for Preschoolers with Wheezing in the Emergency Department",
     "highlightSummary": "Azithromycin does not improve outcomes in preschool wheezers, even when pathogenic bacteria are present. Not practice changing but worth knowing. Most of us are not doing this anyway.",
@@ -84,8 +84,8 @@
     ]
   },
   {
-    "slug": "issue-5",
-    "issueNumber": 5,
+    "slug": "issue-6",
+    "issueNumber": 6,
     "weekOf": "May 11, 2026",
     "highlightTitle": "A randomised controlled trial of defibrillation with manual pressure augmentation during out-of-hospital cardiac arrest",
     "highlightSummary": "MPA reduces impedance when performed but compliance was too low to draw conclusions about survival. This trial does not change practice — it tells us the intervention is hard to implement reliably in the field. The technique remains physiologically plausible but unproven.",
@@ -117,8 +117,8 @@
     ]
   },
   {
-    "slug": "issue-4",
-    "issueNumber": 4,
+    "slug": "issue-5",
+    "issueNumber": 5,
     "weekOf": "May 4, 2026",
     "highlightTitle": "Initial 12 mg Versus 6 mg Adenosine for Supraventricular Tachycardia in the Emergency Department",
     "highlightSummary": "Strong signal that starting with 12mg adenosine for stable SVT improves first-dose conversion without increasing adverse effects. Not definitive (observational design), but the NNT of 3.8 and equivalent safety profile make this worth adopting. I'm switching to 12mg first for most adult SVT.",
@@ -156,8 +156,8 @@
     ]
   },
   {
-    "slug": "issue-3",
-    "issueNumber": 3,
+    "slug": "issue-4",
+    "issueNumber": 4,
     "weekOf": "April 24, 2026",
     "highlightTitle": "Balanced Fluid or 0.9% Saline in Children Treated for Septic Shock (PRoMPT BOLUS)",
     "highlightSummary": "Use whatever crystalloid is most accessible. In pediatric septic shock, balanced fluids and normal saline seem to produce identical clinical outcomes. The hyperchloremia from saline is a lab finding without clinical consequence in this population.",
@@ -185,6 +185,51 @@
         "emoji": "⚠️",
         "title": "Methodology Flag",
         "content": "<div>\r\n          <p><a href=\"https://doi.org/10.1136/emermed-2025-215110\" target=\"_blank\">External validation of the emergency CT head score to reduce non-trauma imaging: a multicentre retrospective study</a></p>\r\n          <p>Emergency Medicine Journal</p>\r\n          <p>100% sensitivity and claims that 48% of CT scans could be avoided — numbers that will catch attention and may be cited to justify clinical decision rules</p>\r\n          <ul><li>Retrospective design with score calculated after the fact — cannot account for clinical gestalt that drove the original CT decision</li><li>No follow-up performed — patients with score of 0 who had negative CTs were assumed to have no pathology, but missed diagnoses presenting later would not be captured</li><li>100% sensitivity with 95% CI of 95.8-100% means the true sensitivity could be as low as 96%. In a low-prevalence condition, even small miss rates matter</li><li>Excluded suspected stroke/TIA per French guidelines, but these are often the diagnoses we&#39;re most worried about missing, and the clinical overlap with included presentations (headache, altered consciousness, confusion) is substantial</li></ul>\r\n          <p><strong>What it does contribute:</strong> The ECHS is simple (4 criteria) and this validation shows reasonable discrimination (AUC 0.894) in a different population than the derivation cohort. It adds to the evidence that clinical criteria can identify very low-risk patients. The 14% abnormality rate suggests appropriate case selection.</p>\r\n          <p><strong>Bottom line:</strong> Do not use this study to justify withholding CT in patients with an ECHS score of 0. Clinical decision rules for CT head need prospective validation with robust follow-up before implementation. This is hypothesis-generating, not practice-changing.</p>\r\n        </div>"
+      }
+    ]
+  },
+  {
+    "slug": "issue-3",
+    "issueNumber": 3,
+    "weekOf": "April 17, 2026",
+    "highlightTitle": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+    "highlightSummary": "For prehospital pediatric seizures without IV access, IM midazolam appears superior to IN midazolam for seizure termination. This is practice-informing for EMS protocols. In the ED, if you have a seizing child and no IV, reach for the IM route first — but recognize that once IV access is established, the route question becomes moot.",
+    "sections": [
+      {
+        "id": "highlight",
+        "emoji": "⭐",
+        "title": "Highlight of the Week",
+        "content": "<p><a href=\"https://doi.org/10.1080/10903127.2026.2658592\" target=\"_blank\">Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis</a></p>\r\n          <p>Prehospital Emergency Care  ·  <em>Systematic Review / Meta-Analysis (LOE 1)</em></p>\r\n          <p>This meta-analysis of 5 studies (n=3,933 pediatric patients, 98% prehospital) compared intranasal versus intramuscular midazolam for seizure termination when IV access is unavailable. IM midazolam was associated with 29% lower need for rescue therapy (RR 1.29, 95% CI 1.15-1.45) and faster seizure termination by approximately 24 seconds. Results were consistent across subgroups including the standard 0.2 mg/kg dose and prehospital-only studies.</p>\r\n          <p>This is a well-conducted meta-analysis with appropriate random-effects modeling and reassuringly low heterogeneity. The included studies are predominantly RCTs from the prehospital setting. The effect size is clinically meaningful — a 29% relative reduction in rescue therapy translates to roughly NNT 10-15 depending on baseline rates. The 24-second faster termination is statistically significant but the clinical importance of this specific interval is debatable. Key limitations: the analysis is dominated by prehospital data, so generalizability to ED settings where IV access might be obtained quickly is uncertain. Also, the studies used atomizer devices for IN delivery — technique matters, and suboptimal atomization could explain some IN failures. The comparison is midazolam-to-midazolam; this doesn&#39;t address whether IN midazolam is inferior to IM midazolam when the alternative is buccal midazolam or rectal diazepam.</p>\r\n          <p><strong>Bottom line:</strong> For prehospital pediatric seizures without IV access, IM midazolam appears superior to IN midazolam for seizure termination. This is practice-informing for EMS protocols. In the ED, if you have a seizing child and no IV, reach for the IM route first — but recognize that once IV access is established, the route question becomes moot.</p>"
+      },
+      {
+        "id": "practice-changing",
+        "emoji": "🔬",
+        "title": "Practice-Changing EM",
+        "content": "<p><a href=\"https://doi.org/10.1016/j.annemergmed.2026.02.012\" target=\"_blank\">Emergency Department Observation and Computed Tomography Use in Children With Blunt Abdominal Trauma</a><span>LOE 3 (Prospective observational cohort, secondary analysis)</span></p>\r\n    <p>Annals of Emergency Medicine</p>\r\n    <p>In children with blunt abdominal trauma (P), does a period of ED observation with deferred CT decision-making (I) compared to immediate CT decision (C) reduce CT utilization without missing injuries requiring intervention (O)?</p>\r\n    <p>Among 7,442 children, 27% underwent observation. Observed patients had significantly lower CT rates (20.5% vs 37.1%, absolute difference 16.7%). Of 1,610 observed patients discharged without CT, zero had intra-abdominal injury requiring acute intervention (0%, 95% CI 0-0.3%). The association held across intermediate suspicion levels (1-50%).</p>\r\n    <p>This is a secondary analysis of the PECARN abdominal trauma cohort. The zero missed injury rate in observed-then-discharged patients is reassuring. Critical limitation: observation was clinician-selected, not randomized. Physicians likely chose observation for lower-risk patients, creating selection bias that inflates the apparent benefit. The adjusted analysis helps but can&#39;t fully account for unmeasured confounders. Still, this provides the strongest evidence to date that structured observation is a legitimate strategy.</p>\r\n    <p><strong>Bottom line:</strong> For pediatric blunt abdominal trauma with intermediate suspicion, a period of clinical observation before CT decision-making may be safe and substantially reduces imaging. Reminder that the PECARN Intra-abdominal Injury Algorithm is useful for identifying patients with very low risk of injury requiring intervention.</p>"
+      },
+      {
+        "id": "foam-radar",
+        "emoji": "📡",
+        "title": "FOAM Radar",
+        "content": "<p><a href=\"https://emcrit.org/emcrit/hyperbaric-carbon-monoxide-poisoning/\" target=\"_blank\">EMCrit 423 – Hyperbaric Therapy for Carbon Monoxide Poisoning?</a><span>Knowledge translation / Clinical commentary</span></p>\r\n    <p>EMCrit  ·  <span>LOE 2-3 underlying evidence (RCTs exist but are conflicting and methodologically problematic)</span></p>\r\n    <p>Weingart revisits the question of HBOT for CO poisoning with Dr. David Juurlink, who co-authored the <a href=\"https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD002041.pub3/full\">2011 Cochrane Review</a> on the subject. The underlying evidence remains a mess — the Weaver trial (NEJM 2002) showed benefit, the Annane trial (Intensive Care 2011) didn&#39;t, and both have significant methodological issues. </p>\r\n    <p><strong>Bottom line:</strong> Worth a listen if you&#39;re in a system where HBOT is available and you need to make these calls. The honest answer remains &#39;we don&#39;t know&#39; — but this will help you think through the decision framework. I still use the numbers I memorized for my Royal College exam to guide decision making (COHb &gt; 25% in adults, 15% in pregnant patients, or any level accompanied by cardiovascular instability or neurologic abnormalities. If in doubt, it&#39;s worth at least making the call. </p>\r\n    <hr>\r\n  \r\n    <p><a href=\"https://first10em.com/stratify-and-storm-pe-trials/\" target=\"_blank\">Higher risk PE management updates (The STRATIFY and STORM-PE trials)</a><span>Knowledge translation / Trial analysis</span></p>\r\n    <p>First10EM  ·  <span>LOE 2 (RCT analysis)</span></p>\r\n    <p>Justin Morgenstern&#39;s take on recent intermediate-risk PE trials examining catheter-directed therapies. He is pretty skeptical of catheter-directed therapies CDT over systemic thrombolysis. The post examines whether STRATIFY and STORM-PE change the calculus.</p>\r\n    <p><strong>Bottom line:</strong> The evidence for CDT superiority over systemic lysis remains thin, which surprised me given how frequently it was recommended in the centre where I trained. Worth reviewing these recent trials, and recognizing that they are both limited by having non-patient centred outcomes. </p>"
+      },
+      {
+        "id": "adjacent-specialties",
+        "emoji": "🔗",
+        "title": "Adjacent Specialties",
+        "content": "<p><a href=\"https://doi.org/10.1161/STROKEAHA.125.054161\" target=\"_blank\">Endovascular Thrombectomy in Patients With Largest Baseline Infarcts (ASPECTS 0-2): An Ancillary Analysis of the LASTE Trial</a><span>LOE 2 (Post-hoc analysis of RCT)</span></p>\r\n    <p>Stroke  ·  <span>Neurology / Interventional Neuroradiology</span></p>\r\n    <p>In patients ≤80 years with anterior circulation LVO stroke and ASPECTS 0-2 presenting within 6.5 hours (P), does EVT plus medical care (I) versus medical care alone (C) improve functional outcomes (O)?</p>\r\n    <p>Among 181 patients with ASPECTS 0-2, EVT improved 90-day functional outcomes (generalized OR 1.81) and reduced mortality (38.4% vs 59.6%, RR 0.64). The proportion achieving mRS 0-3 was 31.4% vs 8.5% (NNT ~4). Symptomatic ICH was numerically higher with EVT (12.9% vs 4.5%) but CI crossed 1.</p>\r\n    <p>This is a post-hoc subgroup analysis, which always warrants caution — but the LASTE trial was specifically designed to include large infarcts. The effect size is large and clinically meaningful. The mortality reduction is striking. However, this was predominantly MRI-selected (which may identify more favorable physiology than CT-only selection), and the symptomatic ICH signal is concerning even if not statistically significant. The generalizability to CT-only shops and older patients (&gt;80 excluded) is limited.</p>\r\n    <p><strong>Bottom line:</strong> For young-ish patients with massive strokes presenting early, EVT appears beneficial even with ASPECTS 0-2.  The conversation about who gets thrombectomy is shifting so continue talking to your local stroke teams.</p>\r\n    <hr>\r\n  \r\n    <p><a href=\"https://doi.org/10.1161/STROKEAHA.125.052748\" target=\"_blank\">Use of Imaging to Guide Eligibility for Reperfusion Therapies in Acute Ischemic Stroke</a><span>LOE 5 (Narrative review)</span></p>\r\n    <p>Stroke  ·  <span>Neurology</span></p>\r\n    <p>Comprehensive review of evolving imaging strategies for stroke reperfusion eligibility, including perfusion imaging, collateral assessment, and emerging trial designs expanding treatment windows.</p>\r\n    <p>This is a narrative review, not primary evidence. Useful for understanding the current landscape and where trials are heading, but doesn&#39;t itself change practice. The value is educational — helping EPs understand why stroke teams are making the decisions they&#39;re making.</p>\r\n    <p><strong>Bottom line:</strong> Background reading for staying current on stroke imaging evolution. Won&#39;t change your ED workflow tomorrow, but helps you understand the expanding eligibility criteria you&#39;re seeing.</p>"
+      },
+      {
+        "id": "major-journals",
+        "emoji": "🌐",
+        "title": "Major Journals Scan",
+        "content": "<p><a href=\"https://doi.org/10.7326/ANNALS-25-03538\" target=\"_blank\">Short Versus Longer Antibiotic Duration for Community-Acquired Pneumonia: A Multicenter Target Trial Emulation</a><span>LOE 3 (Observational target trial emulation)</span></p>\r\n    <p>Annals of Internal Medicine</p>\r\n    <p><strong>Why it matters to EPs:</strong> CAP is bread-and-butter ED medicine. Antibiotic duration decisions often start in the ED, and shorter courses reduce adverse effects, C. diff risk, and resistance pressure.</p>\r\n    <p>Among 55,517 hospitalized CAP patients, only 10.1% met strict eligibility criteria for short-course therapy (clinically stable by day 3, meeting Pneumonia Short Treatment trial criteria). In this selected group, 3-4 day courses had similar 30-day mortality (adjusted RR 0.89, CI 0.01-2.25), readmission, and C. diff rates compared to ≥5 days. Only 7.9% of eligible patients actually received short courses.</p>\r\n    <p>Target trial emulation is an interesting method but it is still observational — residual confounding is inevitable. The wide confidence interval on mortality (0.01-2.25) means we can&#39;t exclude meaningful harm. The key finding is actually the denominator: only 10% of CAP patients met the strict stability criteria. This isn&#39;t a green light for 3-day courses in everyone — it&#39;s confirmation that in a highly selected, stable population, shorter courses appear non-inferior. The fact that only 7.9% of eligible patients received short courses suggests clinician discomfort that may or may not be warranted.</p>\r\n    <p><strong>Bottom line:</strong> For the CAP patient who&#39;s afebrile and stable by day 3, a 3-4 day total course appears safe. But most CAP patients won&#39;t meet these criteria. This supports judicious short-course therapy in selected patients.</p>"
+      },
+      {
+        "id": "methodology-flag",
+        "emoji": "⚠️",
+        "title": "Methodology Flag",
+        "content": "<div>\r\n          <p><a href=\"https://doi.org/10.1016/j.resuscitation.2026.111089\" target=\"_blank\">The Minnesota Mobile Resuscitation Consortium ECMO Truck: A Feasibility Study for ECPR in Refractory Out-of-Hospital Cardiac Arrest</a></p>\r\n          <p>Resuscitation</p>\r\n          <p>Novel prehospital extracorporeal cardiopulmonary resuscitation (ECPR) delivery model with dramatic intervention — likely to generate significant attention and enthusiasm despite extremely limited evidence.</p>\r\n          <ul><li>Sample size of 8 patients per group — far too small to draw any conclusions about efficacy or safety. The 25% survival rate could easily be 0% or 50% with a few different patients.</li><li>Single-center experience from a highly resourced, motivated team — generalizability to other systems is unknown (and probably limited).</li><li>The comparison group is in-hospital ECPR, not standard resuscitation — this doesn&#39;t tell us whether prehospital ECPR is better than no ECPR.</li><li>Feasibility study framing allows authors to claim success without demonstrating clinical benefit. &#39;We can do it&#39; is not the same as &#39;we should do it.&#39;</li></ul>\r\n          <p><strong>What it does contribute:</strong> This demonstrates that a purpose-built mobile ECPR program can be operationally implemented with acceptable procedural metrics. The needle-to-flow times are reasonable. For systems considering prehospital ECPR, this provides a proof-of-concept that the logistics are surmountable. It&#39;s hypothesis-generating for larger trials.</p>\r\n          <p><strong>Bottom line:</strong> Interesting engineering and logistics achievement, but n=8 tells us nothing about whether this improves outcomes. Do not cite this as evidence that prehospital ECPR works. It&#39;s a feasibility signal, not an efficacy signal. The real question of whether bringing ECMO to the field save more lives than optimized conventional care remains completely unanswered.</p>\r\n        </div>"
       }
     ]
   },
