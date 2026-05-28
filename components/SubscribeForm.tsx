@@ -2,8 +2,6 @@
 
 import { useState } from 'react'
 
-const BEEHIIV_SUBSCRIBE_URL =
-  'https://app.beehiiv.com/subscribe/b01b848b-2b94-47ba-999f-5878d86b217f'
 
 export default function SubscribeForm() {
   const [email, setEmail] = useState('')
@@ -15,16 +13,18 @@ export default function SubscribeForm() {
 
     setStatus('loading')
     try {
-      // Use no-cors so the browser doesn't block the cross-origin POST.
-      // We can't read the response in no-cors mode, so show success optimistically.
-      await fetch(BEEHIIV_SUBSCRIBE_URL, {
+      const res = await fetch('/api/subscribe', {
         method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({ email }).toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
       })
-      setStatus('success')
-      setEmail('')
+      const data = await res.json()
+      if (data.success) {
+        setStatus('success')
+        setEmail('')
+      } else {
+        setStatus('error')
+      }
     } catch {
       setStatus('error')
     }
