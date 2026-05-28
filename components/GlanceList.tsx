@@ -49,12 +49,12 @@ export default function GlanceList({ sections }: { sections: readonly Section[] 
 
   return (
     <div>
-      <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1.5">
+      <p className="text-[0.75rem] font-bold text-gray-400 uppercase tracking-widest mb-1.5">
         This Week at a Glance
       </p>
       <ul className="space-y-0.5">
         {items.map((item) => (
-          <li key={item.id} className="text-[11px] leading-tight text-gray-500 line-clamp-1">
+          <li key={item.id} className="text-[0.95rem] leading-tight text-gray-500 line-clamp-1">
             <span className="mr-0.5">{item.emoji}</span>
             <span className="font-semibold text-gray-700">{item.title}:</span>
             {' '}{item.articleTitle}
