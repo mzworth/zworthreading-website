@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Zworth Reading | Max\'s EM Weekly Update',
-  description: 'What\'s worth reading in Emergency Medicine, this week. A weekly curated digest of the most important EM literature, critically appraised and delivered every Sunday.',
+  description: 'What\'s worth reading in Emergency Medicine, this week. A weekly curated digest of the most important EM literature, critically appraised and delivered every Monday.',
   openGraph: {
     title: 'Zworth Reading | Max\'s EM Weekly Update',
     description: 'What\'s worth reading in Emergency Medicine, this week.',

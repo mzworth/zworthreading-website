@@ -123,7 +123,7 @@ export default function AboutPage() {
             in Toronto, Ontario. He completed medical school
             at McMaster University and his five-year Royal College Emergency Medicine residency at
             the University of Ottawa. Zworth Reading is his effort to make keeping up with the EM
-            literature less overwhelming — and more useful — for practicing physicians.
+            literature less overwhelming, and more useful, for practicing physicians.
           </p>
         </div>
       </div>

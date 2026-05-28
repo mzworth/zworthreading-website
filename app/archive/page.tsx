@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Archive | Zworth Reading',
-  description: 'All past editions of Zworth Reading — Max\'s EM Weekly Update.',
+  description: 'All past editions of Zworth Reading: Max\'s EM Weekly Update.',
 }
 
 export default function ArchivePage() {

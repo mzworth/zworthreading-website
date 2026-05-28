@@ -21,9 +21,9 @@ export default function HomePage() {
               What&rsquo;s worth reading in Emergency Medicine, this week.
             </p>
             <p className="text-[17px] text-gray-600 leading-relaxed max-w-xl">
-              Every Sunday, a practicing Canadian EM physician cuts through the noise — curating
-              the week&rsquo;s most important literature, appraising it critically, and synthesizing
-              it with the best FOAM content. Not just what was published. What actually matters.
+              Keeping up with the EM literature is hard. Each week, Zworth Reading does the
+              exhaustive search, deep dive, and critical appraisal, so you know exactly what&rsquo;s
+              worth paying attention to and why.
             </p>
           </div>
         </div>

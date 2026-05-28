@@ -32,7 +32,7 @@ export async function generateMetadata({
   const issue = archiveData.find((i) => i.slug === slug) as Issue | undefined
   if (!issue) return {}
   return {
-    title: `Issue #${issue.issueNumber} — ${issue.highlightTitle} | Zworth Reading`,
+    title: `Issue #${issue.issueNumber}: ${issue.highlightTitle} | Zworth Reading`,
     description: issue.highlightSummary,
   }
 }

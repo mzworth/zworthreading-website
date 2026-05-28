@@ -38,7 +38,7 @@ export default function SubscribeForm() {
   if (status === 'success') {
     return (
       <div className="bg-white/15 rounded-lg px-6 py-5 text-center max-w-md">
-        <p className="text-white font-bold text-xl">You&rsquo;re in. See you Sunday.</p>
+        <p className="text-white font-bold text-xl">You&rsquo;re in. See you Monday.</p>
       </div>
     )
   }
@@ -67,7 +67,7 @@ export default function SubscribeForm() {
         <p className="text-white/80 text-sm mt-2">Something went wrong. Please try again.</p>
       )}
       <p className="text-white/60 text-sm mt-3">
-        Free. Every Sunday. Unsubscribe anytime.
+        Free. Every Monday. Unsubscribe anytime.
       </p>
     </div>
   )
