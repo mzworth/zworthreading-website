@@ -156,6 +156,39 @@
     ]
   },
   {
+    "slug": "issue-3",
+    "issueNumber": 3,
+    "weekOf": "April 24, 2026",
+    "highlightTitle": "Balanced Fluid or 0.9% Saline in Children Treated for Septic Shock (PRoMPT BOLUS)",
+    "highlightSummary": "Use whatever crystalloid is most accessible. In pediatric septic shock, balanced fluids and normal saline seem to produce identical clinical outcomes. The hyperchloremia from saline is a lab finding without clinical consequence in this population.",
+    "sections": [
+      {
+        "id": "highlight",
+        "emoji": "⭐",
+        "title": "Highlight of the Week",
+        "content": "<p><a href=\"https://doi.org/10.1056/NEJMoa2601969\" target=\"_blank\">Balanced Fluid or 0.9% Saline in Children Treated for Septic Shock (PRoMPT BOLUS)</a></p>\r\n          <p>New England Journal of Medicine  ·  <em>RCT (LOE 2)</em></p>\r\n          <p>Pragmatic multicentre RCT across 47 EDs in 5 countries randomizing 8,482 children (2 months to &lt;18 years) with suspected septic shock to balanced crystalloid vs 0.9% saline for up to 48 hours of resuscitation. Primary outcome was major adverse kidney event at 30 days (composite of death, new RRT, or persistent kidney dysfunction). No difference: 3.4% balanced vs 3.0% saline (risk ratio 1.10, 95% CI 0.88-1.40). Hospital-free days identical. Hyperchloremia was more common with saline (49% vs 31%) but this biochemical difference did not translate to clinical harm.</p>\r\n          <p>This is a well-designed pragmatic trial with excellent power (&gt;8,400 patients analyzed), multicentre international enrollment, and a patient-oriented composite primary outcome. Randomization and allocation concealment appear adequate. The 6% withdrawal rate is acceptable and balanced between groups. Key limitation: the overall event rate was low (3%), meaning the study was powered to detect differences in a relatively healthy septic shock population. The lack of blinding is a limitation but outcome assessment was likely objective (death, RRT, creatinine). From this study, it seems that in the ED, fluid type does not matter for hard outcomes.</p>\r\n          <p><strong>Bottom line:</strong> Use whatever crystalloid is most accessible. In pediatric septic shock, balanced fluids and normal saline seem to produce identical clinical outcomes. The hyperchloremia from saline is a lab finding without clinical consequence in this population. </p>"
+      },
+      {
+        "id": "practice-changing",
+        "emoji": "🔬",
+        "title": "Practice-Changing EM",
+        "content": "<p><a href=\"https://doi.org/10.1136/emermed-2026-215904\" target=\"_blank\">Haematoma block versus sedation for manipulating distal radius fractures in the emergency department</a><span>LOE 1 (Systematic review)</span></p>\r\n    <p>Emergency Medicine Journal</p>\r\n    <p>Adults with distal radius fractures requiring manipulation in the ED: does haematoma block provide comparable success to procedural sedation with fewer adverse events?</p>\r\n    <p>Across 7 studies (4 RCTs, 3 observational), no consistent difference in procedural success or radiographic outcomes. One study found less procedural pain with haematoma block. No significant difference in adverse events.</p>\r\n    <p>This is a Best Evidence Topic review, not a formal meta-analysis — the heterogeneity of included studies likely precluded pooling. The two highest-quality RCTs found equivalent radiographic outcomes, which is the outcome that matters. The included studies are small and the overall evidence base is modest, but the signal suggests that haematoma block works as well as sedation. The resource implications are significant. Sedation requires monitoring, nursing time, recovery space, and carries aspiration/respiratory risk. Haematoma block requires a needle and lidocaine.</p>\r\n    <p><strong>Bottom line:</strong> Haematoma block is a legitimate first-line option for distal radius manipulation. It&#39;s faster, cheaper, requires fewer resources, and works just as well. Consider defaulting to haematoma block and reserving sedation for failures or patient preference. I also POCUS useful for identifying the fracture site and optimizing the chances for a successful hematoma block.</p>"
+      },
+      {
+        "id": "foam-radar",
+        "emoji": "📡",
+        "title": "FOAM Radar",
+        "content": "<p><a href=\"https://emottawablog.com/2026/04/traumatic-brain-injuries-a-mbig-headache/\" target=\"_blank\">Traumatic Brain Injuries: A (m)BIG Headache</a><span>Knowledge translation</span></p>\r\n    <p>EMOttawa  ·  <span>LOE 3-4 (The BIG/mBIG criteria are derived from retrospective observational data)</span></p>\r\n    <p>Dr. Camille Dagenais reviews the Brain Injury Guidelines (BIG) and Modified BIG criteria for risk-stratifying patients with traumatic intracranial hemorrhage on CT. These tools help identify which patients with small bleeds can be safely observed without neurosurgical intervention or repeat imaging. In particular, mBIG 1 has very high sensitivity for predicting the need for neurosurgical intervention and supports discharging patients with small bleeds without repeat CT or neurosurgery consultation.</p>\r\n    <p><strong>Bottom line:</strong> Great update on an increasingly relevant topic as CT sensitivity improves. The mBIG criteria seem to be useful for identifying low-risk traumatic ICH, but remember these are derived from retrospective data — they help with disposition decisions but don&#39;t replace clinical judgment for the patient who looks worse than their CT. As Dr. Dagenais acknowledges, while these guidelines are informative safe implementation will require shared protocols between EM, Neurosurgery, Trauma, and Radiology which will take time.</p>"
+      },
+      {
+        "id": "methodology-flag",
+        "emoji": "⚠️",
+        "title": "Methodology Flag",
+        "content": "<div>\r\n          <p><a href=\"https://doi.org/10.1136/emermed-2025-215110\" target=\"_blank\">External validation of the emergency CT head score to reduce non-trauma imaging: a multicentre retrospective study</a></p>\r\n          <p>Emergency Medicine Journal</p>\r\n          <p>100% sensitivity and claims that 48% of CT scans could be avoided — numbers that will catch attention and may be cited to justify clinical decision rules</p>\r\n          <ul><li>Retrospective design with score calculated after the fact — cannot account for clinical gestalt that drove the original CT decision</li><li>No follow-up performed — patients with score of 0 who had negative CTs were assumed to have no pathology, but missed diagnoses presenting later would not be captured</li><li>100% sensitivity with 95% CI of 95.8-100% means the true sensitivity could be as low as 96%. In a low-prevalence condition, even small miss rates matter</li><li>Excluded suspected stroke/TIA per French guidelines, but these are often the diagnoses we&#39;re most worried about missing, and the clinical overlap with included presentations (headache, altered consciousness, confusion) is substantial</li></ul>\r\n          <p><strong>What it does contribute:</strong> The ECHS is simple (4 criteria) and this validation shows reasonable discrimination (AUC 0.894) in a different population than the derivation cohort. It adds to the evidence that clinical criteria can identify very low-risk patients. The 14% abnormality rate suggests appropriate case selection.</p>\r\n          <p><strong>Bottom line:</strong> Do not use this study to justify withholding CT in patients with an ECHS score of 0. Clinical decision rules for CT head need prospective validation with robust follow-up before implementation. This is hypothesis-generating, not practice-changing.</p>\r\n        </div>"
+      }
+    ]
+  },
+  {
     "slug": "issue-2",
     "issueNumber": 2,
     "weekOf": "May 18, 2025",
