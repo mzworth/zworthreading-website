@@ -7,34 +7,30 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false, error: 'Invalid email' }, { status: 400 })
   }
 
-  const apiKey = process.env.BEEHIIV_API_KEY
-  const publicationId = process.env.BEEHIIV_PUBLICATION_ID
+  const apiKey = process.env.KIT_API_KEY
+  const formId = process.env.KIT_FORM_ID
 
-  if (!apiKey || !publicationId) {
+  if (!apiKey || !formId) {
     return NextResponse.json({ success: false, error: 'Server misconfiguration' }, { status: 500 })
   }
 
-  const beehiivRes = await fetch(
-    `https://api.beehiiv.com/v2/publications/${publicationId}/subscriptions`,
+  const kitRes = await fetch(
+    `https://api.kit.com/v4/forms/${formId}/subscribers`,
     {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${apiKey}`,
       },
-      body: JSON.stringify({
-        email,
-        reactivate_existing: false,
-        send_welcome_email: false,
-      }),
+      body: JSON.stringify({ email_address: email }),
     }
   )
 
-  if (beehiivRes.ok || beehiivRes.status === 201) {
+  if (kitRes.ok || kitRes.status === 201) {
     return NextResponse.json({ success: true })
   }
 
-  const errorText = await beehiivRes.text().catch(() => '')
-  console.error('Beehiiv subscribe error', beehiivRes.status, errorText)
+  const errorText = await kitRes.text().catch(() => '')
+  console.error('Kit subscribe error', kitRes.status, errorText)
   return NextResponse.json({ success: false }, { status: 502 })
 }
