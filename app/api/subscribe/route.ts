@@ -14,23 +14,36 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false, error: 'Server misconfiguration' }, { status: 500 })
   }
 
-  const kitRes = await fetch(
-    `https://api.kit.com/v4/forms/${formId}/subscribers`,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({ email_address: email }),
-    }
-  )
+  const headers = {
+    'Content-Type': 'application/json',
+    'X-Kit-Api-Key': apiKey,
+  }
 
-  if (kitRes.ok || kitRes.status === 201) {
+  // Step 1: Create (upsert) the subscriber
+  const createRes = await fetch('https://api.kit.com/v4/subscribers', {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ email_address: email }),
+  })
+
+  if (!createRes.ok && createRes.status !== 201) {
+    const errorText = await createRes.text().catch(() => '')
+    console.error('Kit create subscriber error', createRes.status, errorText)
+    return NextResponse.json({ success: false }, { status: 502 })
+  }
+
+  // Step 2: Add the subscriber to the form
+  const formRes = await fetch(`https://api.kit.com/v4/forms/${formId}/subscribers`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ email_address: email }),
+  })
+
+  if (formRes.ok || formRes.status === 201) {
     return NextResponse.json({ success: true })
   }
 
-  const errorText = await kitRes.text().catch(() => '')
-  console.error('Kit subscribe error', kitRes.status, errorText)
+  const errorText = await formRes.text().catch(() => '')
+  console.error('Kit add to form error', formRes.status, errorText)
   return NextResponse.json({ success: false }, { status: 502 })
 }
