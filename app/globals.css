@@ -90,3 +90,11 @@ body {
 .prose-newsletter em {
   font-style: italic;
 }
+
+/* Article titles (first <a> or <strong> in a <p>) should sit on their own line
+   so that the LOE / journal metadata that follows isn't jammed against the title. */
+.prose-newsletter p > a:first-child,
+.prose-newsletter p > strong:first-child {
+  display: block;
+  margin-bottom: 0.2rem;
+}
