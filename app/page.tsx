@@ -22,9 +22,7 @@ export default function HomePage() {
               What&rsquo;s worth reading in Emergency Medicine, this week.
             </p>
             <p className="text-[17px] text-gray-600 leading-relaxed max-w-xl">
-              Keeping up with the EM literature is hard. Each week, Zworth Reading does the
-              exhaustive search, deep dive, and critical appraisal, so you know exactly what&rsquo;s
-              worth paying attention to and why.
+              Keeping up with the EM literature is a lot. Each week, Max Zworth curates and appraises the week&rsquo;s most important EM content, so you know exactly what&rsquo;s worth reading, and why.
             </p>
           </div>
         </div>
