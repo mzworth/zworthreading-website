@@ -52,12 +52,13 @@ function decodeQP(str) {
 // whether a part's *own headers* (not nested content) declare text/html.
 // ---------------------------------------------------------------------------
 function extractHtml(emlContent) {
-  // Collect every MIME boundary declared in the email
-  const boundaryRegex = /boundary="([^"]+)"/g;
+  // Collect every MIME boundary declared in the email.
+  // Handles both quoted (boundary="abc") and unquoted (boundary=abc) forms.
+  const boundaryRegex = /boundary=(?:"([^"]+)"|([^\s;]+))/g;
   let match;
   const boundaries = [];
   while ((match = boundaryRegex.exec(emlContent)) !== null) {
-    boundaries.push(match[1]);
+    boundaries.push(match[1] ?? match[2]);
   }
   if (boundaries.length === 0) throw new Error('No MIME boundary found in EML');
 
