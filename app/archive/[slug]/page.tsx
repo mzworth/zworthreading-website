@@ -105,6 +105,13 @@ export default async function EditionPage({ params }: { params: Promise<{ slug: 
 }
 
 function SectionCard({ section }: { section: Section }) {
+  const calloutClass =
+    section.id === 'highlight'
+      ? 'prose-newsletter-highlight'
+      : section.id === 'methodology-flag'
+      ? 'prose-newsletter-flag'
+      : ''
+
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
       <div className="bg-gray-50 border-b border-gray-200 px-5 py-3.5 flex items-center gap-2">
@@ -115,10 +122,12 @@ function SectionCard({ section }: { section: Section }) {
           {section.title}
         </h2>
       </div>
-      <div
-        className="px-5 py-5 prose-newsletter"
-        dangerouslySetInnerHTML={{ __html: section.content }}
-      />
+      <div className="px-5 py-5">
+        <div
+          className={`prose-newsletter ${calloutClass}`}
+          dangerouslySetInnerHTML={{ __html: section.content }}
+        />
+      </div>
     </div>
   )
 }
